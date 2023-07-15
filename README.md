@@ -18,4 +18,4 @@ Basic Signals:
 10. Sinc Signal (unnormalized sinc signal)
 11. Sampling Signal (normalized sinc signal)
 
-**'Print' folder contains PDF of results of all signals with codes
+**'Print' folder contains PDF of results of all signals with codes**
