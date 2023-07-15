@@ -1,0 +1,20 @@
+t = 0 : 0.01 : 4;
+syms t;
+a = sym(1);
+b = sym(3);
+f = rectangularPulse(a, b, t);
+subplot(131);
+fplot(f);
+title('Rectangular Pulse Signal');
+
+r = fourier(f);
+xr = real(r);
+xi = imag(r);
+X = sqrt((xr ^ 2) + (xi ^ 2));
+subplot(132);
+fplot(X);
+title('Magnitude Spectrum');
+P = (-atan(xi / xr));
+subplot(133);
+fplot(P);
+title('Phase Spectrum');

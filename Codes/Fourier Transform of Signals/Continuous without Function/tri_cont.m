@@ -1,0 +1,21 @@
+t = -5 : 0.01 : 5;
+syms t;
+a = sym(-1);
+b = sym(1);
+c = sym(3);
+f = triangularPulse(a, b, c, t);
+subplot(131);
+fplot(f);
+title('Triangular Pulse Signal');
+
+r = fourier(f);
+xr = real(r);
+xi = imag(r);
+X = sqrt((xr ^ 2) + (xi ^ 2));
+subplot(132);
+fplot(X);
+title('Magnitude Spectrum');
+P = (-atan(xi / xr));
+subplot(133);
+fplot(P);
+title('Phase Spectrum');
