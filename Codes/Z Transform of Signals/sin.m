@@ -1,0 +1,11 @@
+syms n;
+x = sin(n);
+y = ztrans(x);
+disp('z transform of Sinusoidal Signal: ');
+disp(y);
+subplot(211);
+fplot(x);
+title('Sinusoidal Signal');
+subplot(212);
+fplot(y);
+title('Z transform of Sinusoidal Signal');

@@ -1,0 +1,11 @@
+syms n;
+x = sign(n);
+y = ztrans(x);
+disp('z transform of Signum Function: ');
+disp(y);
+subplot(211);
+fplot(x);
+title('Signum Function');
+subplot(212);
+fplot(y);
+title('Z transform of Signum Function');

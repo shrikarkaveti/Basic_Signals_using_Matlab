@@ -1,0 +1,11 @@
+syms n;
+x = dirac(n);
+y = ztrans(x);
+disp('z transform of Unit Impulse Signal: ');
+disp(y);
+subplot(211);
+fplot(x);
+title('Unit Impulse Signal');
+subplot(212);
+fplot(y);
+title('Z transform of Unit Impulse Signal');

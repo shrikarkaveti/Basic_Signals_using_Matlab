@@ -1,0 +1,11 @@
+syms n;
+x = exp(n);
+y = ztrans(x);
+disp('z transform of Exponential Signal: ');
+disp(y);
+subplot(211);
+fplot(x);
+title('Exponential Signal');
+subplot(212);
+fplot(y);
+title('Z transform of Exponential Signal');

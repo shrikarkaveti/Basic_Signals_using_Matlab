@@ -1,0 +1,11 @@
+syms n;
+x = triangularPulse(n);
+y = ztrans(x);
+disp('z transform of Triangular Pulse Signal: ');
+disp(y);
+subplot(211);
+fplot(x);
+title('Triangular Pulse Signal');
+subplot(212);
+fplot(y);
+title('Z transform of Triangular Pulse Signal');

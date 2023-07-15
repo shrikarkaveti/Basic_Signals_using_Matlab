@@ -1,0 +1,11 @@
+syms n;
+x = heaviside(n) * ((n ^ 2) / 2);
+y = ztrans(x);
+disp('z transform of Parabolic Signal: ');
+disp(y);
+subplot(211);
+fplot(x);
+title('Parabolic Signal');
+subplot(212);
+fplot(y);
+title('Z transform of Parabolic Signal');

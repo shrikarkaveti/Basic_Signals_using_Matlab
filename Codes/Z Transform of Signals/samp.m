@@ -1,0 +1,11 @@
+syms n;
+x = sinc((1 / pi) * n);
+y = ztrans(x);
+disp('z transform of Sampling Signal: ');
+disp(y);
+subplot(211);
+fplot(x);
+title('Sampling Signal');
+subplot(212);
+fplot(y);
+title('Z transform of Sampling Signal');

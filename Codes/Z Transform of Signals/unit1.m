@@ -1,0 +1,11 @@
+syms n;
+x = [0, 0, 0, 1, 1, 1]';
+y = ztrans(x);
+disp('z transform of Unit Step: ');
+disp(y);
+subplot(211);
+fplot(x);
+title('Unit Step Signal');
+subplot(212);
+fplot(y);
+title('Z transform of Unit Step Signal');

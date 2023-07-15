@@ -1,0 +1,13 @@
+syms n;
+a = sym(1);
+b = sym(3);
+x = rectangularPulse(a, b, n);
+y = ztrans(x);
+disp('z transform of Rectangular Pulse Signal: ');
+disp(y);
+subplot(211);
+fplot(x);
+title('Rectangular Pulse Signal');
+subplot(212);
+fplot(y);
+title('Z transform of Rectangular Pulse Signal');
