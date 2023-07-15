@@ -1,4 +1,4 @@
-# signal_processing
+# Basic Signals using Matlab
 1. Using Matlab to generate basic signals (Eg. Unit Step Signal, Ramp Signal, Parabolic Signal)
 2. Performing Convolution of Signals (Continuous Convolution (with and without built-in and custom functions, Discrete Convolution) 
 3. Performing Fourier Transform on Signals (with and without built-in and custom functions, Discrete Convolution) 
