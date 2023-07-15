@@ -1,0 +1,15 @@
+syms t;
+w = 2 * pi * 50;
+a = sym(1);
+b = sym(2);
+c = sym(3);
+x = @(t)triangularPulse(a, b, c, t);
+y = @(t)x(t) * exp(-1j * w * t);
+z = int(y(t), t);
+xr = real(z);
+xi = imag(z);
+X = sqrt((xr ^ 2) + (xi ^ 2));
+P = (-atan(xi / xr));
+disp(z);
+disp(X);
+disp(P);
